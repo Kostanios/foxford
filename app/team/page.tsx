@@ -3,16 +3,18 @@ import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 export default async function Team() {
   const wixClient = await getWixClient();
-  const { items: team } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'Our-Team',
-    })
-    .find();
-  const { items: volunteers } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'Volunteers',
-    })
-    .find();
+  // const { items: team } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'Our-Team',
+  //   })
+  //   .find();
+  const team: any = [];
+  // const { items: volunteers } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'Volunteers',
+  //   })
+  //   .find();
+  const volunteers: any = [];
   return (
     <div className="relative" data-testid={testIds.TEAM_PAGE.CONTAINER}>
       <div className="w-full h-[400px] relative">
@@ -36,7 +38,7 @@ export default async function Team() {
           className="grid grid-cols-1 sm:grid-cols-4 gap-5 grid-flow-row mt-10"
           data-testid={testIds.TEAM_PAGE.TEAM_MEMBERS}
         >
-          {team!.map((item) => (
+          {team!.map((item: any) => (
             <div key={item._id} className="p-4 relative">
               <div className="w-[300px] h-[220px] relative">
                 <WixMediaImage
@@ -63,7 +65,7 @@ export default async function Team() {
           mission of improving education for everyone.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-5 grid-flow-row mt-10">
-          {volunteers!.map((item) => (
+          {volunteers!.map((item: any) => (
             <div key={item._id} className="p-4 relative">
               <div className="bg-white sm:mt-[-50px] relative mx-6 px-2 py-5 text-center">
                 <h2 className="mb-10 font-extrabold text-blue-site font-site">
