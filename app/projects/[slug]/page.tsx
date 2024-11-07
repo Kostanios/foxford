@@ -3,15 +3,16 @@ import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 
 export default async function Project({ params }: any) {
-  const wixClient = await getWixClient();
-  const { items } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'Our-Projects',
-    })
-    .eq('slug', params.slug)
-    .find();
-  const project = items![0];
+  // const wixClient = await getWixClient();
+  // const { items } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'Our-Projects',
+  //   })
+  //   .eq('slug', params.slug)
+  //   .find();
+  // const project = items![0];
 
+  const project: any = { data: {} };
   return (
     <div
       className="relative"

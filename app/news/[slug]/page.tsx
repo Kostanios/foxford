@@ -3,14 +3,16 @@ import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 
 export default async function New({ params }: any) {
-  const wixClient = await getWixClient();
-  const { items } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'News',
-    })
-    .eq('slug', params.slug)
-    .find();
-  const item = items![0];
+  // const wixClient = await getWixClient();
+  // const { items } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'News',
+  //   })
+  //   .eq('slug', params.slug)
+  //   .find();
+  // const item = items![0];
+
+  const item: any = { data: {} };
 
   return (
     <div className="relative" data-testid={testIds.NEWS_DETAILS_PAGE.CONTAINER}>

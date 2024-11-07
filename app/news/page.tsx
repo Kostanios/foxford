@@ -3,12 +3,13 @@ import { formatDate } from '@app/utils/date-formatter';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 export default async function News() {
-  const wixClient = await getWixClient();
-  const { items } = await wixClient.items
-    .queryDataItems({
-      dataCollectionId: 'News',
-    })
-    .find();
+  // const wixClient = await getWixClient();
+  // const { items } = await wixClient.items
+  //   .queryDataItems({
+  //     dataCollectionId: 'News',
+  //   })
+  //   .find();
+  const items: any = [];
 
   return (
     <div className="relative">
@@ -36,7 +37,7 @@ export default async function News() {
           className="grid grid-cols-1 sm:grid-cols-3 gap-7 grid-flow-row mt-10"
           data-testid={testIds.NEWS_PAGE.NEWS_LIST}
         >
-          {items!.map((item) => (
+          {items!.map((item: any) => (
             <div
               key={item._id}
               className="relative border"
