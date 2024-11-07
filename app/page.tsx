@@ -14,20 +14,20 @@ export default function Home() {
           />
         </video>
         <div className="absolute top-[40px] right-[30px] sm:top-2/4 sm:left-2/4 text-white sm:translate-y-[-50%] sm:translate-x-[-50%] font-site">
-          <h2 className="sm:text-4xl mb-4">FREE & ACCESSIBLE</h2>
-          <h1 className="sm:text-[90px] sm:leading-[90px]">
-            EDUCATION FOR ALL
+          <h2 className="sm:text-3xl mb-4">ИЗУЧЕНИЯ ИНОСТРАННЫХ ЯЗЫКОВ</h2>
+          <h1 className="sm:text-[70px] sm:leading-[70px]">
+            Качественные Знания для Всех
           </h1>
         </div>
         <div className="flex flex-col sm:flex-row relative items-center bg-white mt-[-10px] sm:mt-[-55px] mx-auto max-w-xs sm:max-w-4xl border-t-4 border-blue-site font-site">
           <h3 className="flex-1 sm:text-3xl py-4 px-8 text-center sm:text-left">
-            Take action to help us grow
+            Запишись на бесплатное пробное занятие
           </h3>
           <a
             href="/contact"
             className="btn-main sm:text-2xl sm:p-8 hover:bg-purple-site w-fit"
           >
-            DONATE
+            Запись
           </a>
         </div>
       </div>
@@ -39,49 +39,49 @@ export default function Home() {
         <div className="basis-1/3">
           <div className="h-[370px] relative">
             <WixMediaImage
-              media="https://static.wixstatic.com/media/0b340f_d146a1cff38b4503ae5e6ccc9aa86368~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_434,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0b340f_d146a1cff38b4503ae5e6ccc9aa86368~mv2_d_5184_3456_s_4_2.jpg"
+              media="/images/IMG_7505.jpeg"
               objectFit="cover"
               sizes="50vw"
               disableZoom={true}
             />
           </div>
-          <div className="border-y-4 border-blue-site p-8 sm:w-60 relative bg-white sm:mt-[-300px]">
-            <h3 className="text-2xl font-site">Our Initiatives</h3>
+          <div className="border-y-4 border-blue-site p-6 sm:w-60 relative bg-white sm:mt-[-250px]">
+            <h3 className="text-2xl font-site">Опытные преподаватели</h3>
             <p className="my-6 text-sm">
-              Our initiatives bring people together to help solve real problems
-              and evoke a positive change. Explore our initiatives and see what
-              you can do to help.
+              Наши преподаватели мастера своего дела, которые умеют находить
+              подход к каждому ученику. С ними грамматика и лексика превращаются
+              в живой язык, доступный и интересный для всех
             </p>
-            <a
-              href="/projects"
-              className="text-purple-site py-6 font-site"
-              data-testid={testIds.HOME_PAGE.OUR_INITIATIVES_CTA}
-            >
-              Read More
-            </a>
+            {/*<a*/}
+            {/*  href="/projects"*/}
+            {/*  className="text-purple-site py-6 font-site"*/}
+            {/*  data-testid={testIds.HOME_PAGE.OUR_INITIATIVES_CTA}*/}
+            {/*>*/}
+            {/*  Read More*/}
+            {/*</a>*/}
           </div>
         </div>
         <div className="basis-2/3">
           <div className="h-[370px] relative">
             <WixMediaImage
-              media="https://static.wixstatic.com/media/0b340f_c407b331d71449afa40b30f6efb200aa~mv2_d_5580_4160_s_4_2.jpg/v1/fill/w_615,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0b340f_c407b331d71449afa40b30f6efb200aa~mv2_d_5580_4160_s_4_2.jpg"
+              media="/images/IMG_2035.jpeg"
               objectFit="cover"
               sizes="100vw"
               disableZoom={true}
             />
           </div>
           <div className="border-y-4 border-blue-site p-8 sm:w-60 relative bg-white sm:ml-32 sm:mt-[-430px]">
-            <h3 className="text-2xl font-site">Our Mission</h3>
+            <h3 className="text-2xl font-site">
+              Современные классы в центре Варшавы
+            </h3>
             <p className="my-6 text-sm">
-              We believe that education is a human right and a powerful tool for
-              social change. We provide educational projects, learning resources
-              and mentoring programs for kids of all ages and backgrounds. We
-              aim to create a world where everyone has the opportunity to learn
-              and grow.
+              Учите языки в светлых, уютных аудиториях, оснащенных всем
+              необходимым для продуктивного обучения. Мы создаем атмосферу, где
+              учеба становится комфортной и увлекательной.
             </p>
-            <a href="/about" className="text-purple-site py-6 font-site">
-              Read More
-            </a>
+            {/*<a href="/about" className="text-purple-site py-6 font-site">*/}
+            {/*  Read More*/}
+            {/*</a>*/}
           </div>
         </div>
       </div>
@@ -89,43 +89,43 @@ export default function Home() {
         <div className="basis-2/3">
           <div className="h-[370px] sm:h-[470px] relative">
             <WixMediaImage
-              media="https://static.wixstatic.com/media/0b340f_0b4d1813105145bfa782ce1d7a379151~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_682,h_568,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0b340f_0b4d1813105145bfa782ce1d7a379151~mv2_d_5760_3840_s_4_2.jpg"
+              media="/images/IMG_5036.JPG"
               objectFit="cover"
               sizes="100vw"
               disableZoom={true}
             />
           </div>
           <div className="border-y-4 border-blue-site p-8 sm:w-60 relative bg-white sm:ml-44 sm:mt-[-230px]">
-            <h3 className="text-2xl font-site">Recent News</h3>
+            <h3 className="text-2xl font-site">Гибкие абонементы</h3>
             <p className="my-6 text-sm">
-              Get caught up on recent news and our latest achievements in the
-              world of education.
+              Занимайтесь в группах по 4-8 человек и выберите комфортный тариф:
+              стандартный абонемент на 8 занятий или интенсивный на 12.
             </p>
-            <a href="/news" className="text-purple-site py-6 font-site">
-              Read More
-            </a>
+            <strong>Помесячная Оплата</strong>
+
+            {/*<a href="/news" className="text-purple-site py-6 font-site">*/}
+            {/*  Read More*/}
+            {/*</a>*/}
           </div>
         </div>
         <div className="basis-1/3">
           <div className="h-[370px] sm:h-[470px] relative">
             <WixMediaImage
-              media="https://static.wixstatic.com/media/0b340f_a075ec7cf76b4b479b4b482e44a88c43~mv2_d_3840_5760_s_4_2.jpg/v1/fill/w_486,h_568,al_tr,q_80,usm_0.66_1.00_0.01,enc_auto/0b340f_a075ec7cf76b4b479b4b482e44a88c43~mv2_d_3840_5760_s_4_2.jpg"
+              media="/images/IMG_3730.jpeg"
               objectFit="cover"
               sizes="50vw"
               disableZoom={true}
             />
           </div>
-          <div className="border-y-4 border-blue-site p-8 sm:w-60 relative bg-white sm:ml-32 sm:mt-[-530px]">
-            <h3 className="text-2xl font-site">Take Part</h3>
+          <div className="border-y-4 border-blue-site p-8 sm:w-60 relative bg-white sm:ml-32 sm:mt-[-430px]">
+            <h3 className="text-2xl font-site">Бесплатные учебные материалы</h3>
             <p className="my-6 text-sm">
-              We welcome contributions in whatever form they come. Whether you
-              want to contribute your time as a volunteer, join us as a partner
-              or donate resources towards helping us achieve our goals, there is
-              always an opportunity to make a difference.
+              Все необходимые материалы предоставляются бесплатно, чтобы вы
+              могли сосредоточиться на учебе без дополнительных расходов
             </p>
-            <a href="/contact" className="text-purple-site py-6 font-site">
-              Read More
-            </a>
+            {/*<a href="/contact" className="text-purple-site py-6 font-site">*/}
+            {/*  Read More*/}
+            {/*</a>*/}
           </div>
         </div>
       </div>

@@ -16,8 +16,8 @@ const Header = () => (
           >
             <Logo />
             <div>
-              <span className="block font-site">ChoosEquality</span>
-              <span className="text-xs">Education for All</span>
+              <span className="block font-site">FoxFord</span>
+              <span className="text-xs">Языковая Школа</span>
             </div>
           </a>
         </h2>

@@ -1,6 +1,7 @@
 import './footer.css';
 import { Logo } from '@app/components/Logo/Logo';
 import testIds from '@app/utils/test-ids';
+import Link from 'next/link';
 
 const Footer = () => (
   <footer
@@ -9,25 +10,36 @@ const Footer = () => (
   >
     <div className="flex flex-col sm:flex-row">
       <div className="basis-2/3 bg-blue-site text-white p-14 sm:pl-44">
-        <h2 className="text-2xl sm:text-3xl font-bold">CONTACT US</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold">Свяжитесь с Нами</h2>
         <div className="flex flex-col sm:flex-row text-sm font-helvetica">
           <div className="basis-1/3 border-b border-white pb-4">
             <p className="mt-10">
-              Please reach out to us with any questions or concerns. We’re happy
-              to hear from you.
+              Пожалуйста, обращайтесь к нам с любыми вопросами или проблемами.
+              Мы будем рады услышать вас.
             </p>
             <p className="mt-10">Registered Charity: 12345-67</p>
           </div>
           <div className="basis-1/3"></div>
-          <div className="basis-1/2 border-b border-white pb-4">
-            <p className="mt-10">
-              500 Terry Francois Street
-              <br /> San Francisco, CA 94158
+          <div className="basis-1/2 border-b border-white pb-4 pt-4">
+            <a
+              className="hover:text-orange-site transition ease"
+              href="https://maps.google.com?q=Foxford%20school,%20Tadeusza%20Czackiego%203/5,%2000-043%20Warszawa&ftid=0x471ecdb000e4dd07:0x788dd8a8d352005d&entry=gps&lucs=,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_st=com.google.maps.preview.copy"
+            >
+              Twarda 14
+              <br /> 00-824 Варшава
+            </a>
+            <p className="mt-10 hover:text-orange-site transition ease">
+              <a href="tel:+48883476721">
+                Телефон: <span className="text-nowrap">+48 883476721</span>
+              </a>
             </p>
-            <p className="mt-10">Phone: 1-800-000-0000</p>
           </div>
         </div>
-        <h3 className="text-4xl mt-10">info@mysite.com</h3>
+        <h3 className="text-4xl mt-10 hover:text-orange-site transition ease">
+          <a href="mailto:fox.ford.school.eng@gmail.com">
+            fox.ford.school.eng@gmail.com
+          </a>
+        </h3>
       </div>
       <div className="basis-1/3 bg-gray-200 p-14 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold">BE THE FIRST TO KNOW</h2>
@@ -45,7 +57,7 @@ const Footer = () => (
     <div className="mx-auto text-center sm:text-xs mt-6">
       <Logo />
       <p className="font-default mb-10">
-        © 2035 ChoosEquality. Powered and secured by Wix
+        © 2024 FoxFord. Powered and secured by NextJS
       </p>
     </div>
   </footer>
