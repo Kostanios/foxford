@@ -14,8 +14,9 @@ const Footer = () => (
         <div className="flex flex-col sm:flex-row text-sm font-helvetica">
           <div className="basis-1/3 border-b border-white pb-4">
             <p className="mt-10">
-              Пожалуйста, обращайтесь к нам с любыми вопросами или проблемами.
-              Мы будем рады услышать вас.
+              Если вы хотите записаться к нам или у вас возник вопрос
+              обращайтесь к нам с любыми вопросами или проблемами в наш
+              инстаграмм или по почте
             </p>
             <p className="mt-10">Registered Charity: 12345-67</p>
           </div>
@@ -35,23 +36,25 @@ const Footer = () => (
             </p>
           </div>
         </div>
-        <h3 className="text-4xl mt-10 hover:text-orange-site transition ease">
+        <h3 className="text-l md:text-4xl mt-10 hover:text-orange-site transition ease">
           <a href="mailto:fox.ford.school.eng@gmail.com">
             fox.ford.school.eng@gmail.com
           </a>
         </h3>
       </div>
       <div className="basis-1/3 bg-gray-200 p-14 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold">BE THE FIRST TO KNOW</h2>
-        <p className="mt-6">Sign up to our newsletter to stay informed</p>
-        <input
-          type="email"
-          className="my-6 w-3/4 block mx-auto bg-transparent border-0 border-b border-blue-site text-blue-site"
-          placeholder="Email Address"
-        />
-        <a href="" className="text-purple-site py-6 font-site">
-          Subscribe Now
-        </a>
+        <h2 className="text-2xl sm:text-3xl font-bold">
+          Для записи на занятие пишите в директ нашего истаграмма
+        </h2>
+        {/*<p className="mt-6">Sign up to our newsletter to stay informed</p>*/}
+        {/*<input*/}
+        {/*  type="email"*/}
+        {/*  className="my-6 w-3/4 block mx-auto bg-transparent border-0 border-b border-blue-site text-blue-site"*/}
+        {/*  placeholder="Email Address"*/}
+        {/*/>*/}
+        {/*<a href="" className="text-purple-site py-6 font-site">*/}
+        {/*  Subscribe Now*/}
+        {/*</a>*/}
       </div>
     </div>
     <div className="mx-auto text-center sm:text-xs mt-6">

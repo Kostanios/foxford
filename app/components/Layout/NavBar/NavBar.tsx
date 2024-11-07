@@ -5,12 +5,13 @@ import type { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const navbarItems = [
-  { ref: '/', label: 'Home' },
-  { ref: '/about', label: 'About' },
-  { ref: '/projects', label: 'Projects' },
-  { ref: '/team', label: 'Team' },
-  { ref: '/news', label: 'News' },
-  { ref: '/contact', label: 'Contact' },
+  { ref: '/', label: 'Главная' },
+  { ref: '/about', label: 'О Нас' },
+  { ref: '/faq', label: 'Частые Вопросы' },
+  // { ref: '/projects', label: 'Projects' },
+  { ref: '/team', label: 'Преподаватели' },
+  // { ref: '/news', label: 'News' },
+  { ref: '/contact', label: 'Контакты' },
 ];
 
 const StyledNavLink = ({

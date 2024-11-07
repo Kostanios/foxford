@@ -2,7 +2,7 @@ import { getWixClient } from '@app/hooks/useWixClientServer';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import testIds from '@app/utils/test-ids';
 export default async function Team() {
-  const wixClient = await getWixClient();
+  // const wixClient = await getWixClient();
   // const { items: team } = await wixClient.items
   //   .queryDataItems({
   //     dataCollectionId: 'Our-Team',
