@@ -164,7 +164,7 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <CarouselClient />
+      {/*<CarouselClient />*/}
     </div>
   );
 }
