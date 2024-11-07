@@ -11,6 +11,9 @@
     "start": "next start",
     "lint": "next lint --fix"
   },
+  "engines": {
+    "yarn": ">=2.0.0"
+  },
   "dependencies": {
     "@netlify/plugin-nextjs": "4.36.0",
     "@wix/data": "1.0.47",
